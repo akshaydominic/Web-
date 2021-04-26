@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Javascript var</title>
+    <style>
+        p{
+            color: white;
+        }
+        .facebook{
+            
+            background-color: #4267B2;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+            letter-spacing: 3px;
+            font-style: bold;
+            font-family: cursive;
+            text-shadow: 3px 3px black;
+            
+        }
+        .Apple{
+            background:linear-gradient(to bottom right,rgba(0,0,255,0.5),rgba(0,0,255,1));
+            height: 100px;
+            width:auto;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 2px;
+            
+            
+        }
+        .Microsoft{
+            background-color: green;
+            height: 100px;
+            width:auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            
+
+        }
+    </style></head>
+    <body>
+         <div class="facebook" id="facebook">
+        <p>Facebook</p></div>
+        <div class="Apple" id="apple">
+        <p>Apple</p></div>
+        <div class="Microsoft" id="microsoft">
+        <p> Microsoft</p></div>
+        <button id="button1" onclick="swap('facebook','microsoft')"> swap facebook inner element</button>
+        <button id="button2" onclick="swap('microsoft','apple')"> swap  mircrosoft inner element</button>
+        <script>
+            function swap(id1,id2){
+                var x=document.getElementById(id1).innerHTML;
+                var y=document.getElementById(id2).innerHTML;
+                document.getElementById(id1).innerHTML=y;
+                document.getElementById(id2).innerHTML=x;
+            }
+        </script>
+        
+        
+    </body></html>

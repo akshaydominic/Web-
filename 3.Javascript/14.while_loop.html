@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head><title>while loop</title>
+    </head>
+    <body>
+        <p style="font-family: cursive; font-size: 20px; font-weight: bold; letter-spacing: 2px "; i>Current balance $1000</p>
+        <div id="paragraph"> </div>
+        <button onclick="gameshop()"> Start</button>
+        <script>
+            function gameshop(){
+                var balance=1000;
+                var items=0;
+                while(balance>0){
+                    var itemprice=Math.floor(Math.random()*100);
+                    if(itemprice<=balance){
+                        items++;
+                        balance-=itemprice;
+                        document.getElementById("paragraph").innerHTML+="<p> Current balance $" + balance + " Item Price $ "+ itemprice + ".</p>";
+                        
+                    }
+                    
+                
+                }
+                document.getElementById("paragraph").innerHTML+=" No of items : " +items;
+                
+            }
+            
+            
+            
+        </script>
+    </body>
+</html>

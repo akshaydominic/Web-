@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Cookies</title>
+    </head>
+    <body>
+        <p id="paragraph"> </p>
+        <script>
+            document.cookie="username=akshay";
+            document.cookie="city=bangalore";
+            document.cookie="age=23";
+            window.alert(document.cookie);
+            var list_cookies=document.cookie.split(';');
+            window.alert(list_cookies);
+            for(i=0;i<list_cookies.length;i++){
+                document.getElementById("paragraph").innerHTML+="<br />"+list_cookies[i];
+                
+            }
+        </script>
+    </body>
+</html>

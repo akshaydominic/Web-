@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Arrays</title>
+    </head>
+    <body>
+        <p  id="paragraph" style="font-family: cursive; color: blueviolet; font-size: 25px; font-weight: bold " ;>Javascript</p>
+        <script>
+            var shoppinglist=["bread","apple","milk"];
+            function showresult(x){
+                document.getElementById("paragraph").innerHTML+="<br />" + x;
+            }
+            showresult(shoppinglist);
+            var mystring='ABCD '
+            var list=mystring.split('');
+            showresult(list);
+            shoppinglist.splice(1,1,"bannna","jack");
+            shoppinglist.splice(0,0,"akshay");
+            shoppinglist.splice(0,1);
+            showresult(shoppinglist);
+            
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

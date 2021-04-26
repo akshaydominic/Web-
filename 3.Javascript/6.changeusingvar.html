@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Javascript var</title>
+    <style>
+        p{
+            color: white;
+        }
+        .facebook{
+            
+            background-color: #4267B2;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+            letter-spacing: 3px;
+            font-style: bold;
+            font-family: cursive;
+            text-shadow: 3px 3px black;
+            
+        }
+        .Apple{
+            background:linear-gradient(to bottom right,rgba(0,0,255,0.5),rgba(0,0,255,1));
+            height: 100px;
+            width:auto;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 2px;
+            
+            
+        }
+        .Microsoft{
+            background-color: green;
+            height: 100px;
+            width:auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            
+
+        }
+    </style></head>
+    <body>
+         <div class="facebook" id="facebook">
+        <p>Facebook</p></div>
+        <div class="Apple">
+        <p>Apple</p></div>
+        <div class="Microsoft" id="microsoft">
+        <p> Microsoft</p></div>
+        <button id="button1"> change facebook style</button>
+        <button id="button2"> change mircrosoft color</button>
+        <script> 
+            var x,y,z,color;
+            document.getElementById("button2").onclick=function(){
+                x=Math.round(Math.random()*256);
+                y=Math.round(Math.random()*256);
+                z=Math.round(Math.random()*256);
+                color='rgb(' + x + ',' + y + ',' + z + ')';
+                document.getElementById("microsoft").style.backgroundColor=color;
+                document.getElementById("microsoft").innerHTML=color;
+                
+                
+            }
+            
+        </script>
+        
+    </body></html>

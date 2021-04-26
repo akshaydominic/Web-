@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Transitions</title>
+    <style>
+        p{
+            color: white;
+        }
+        .facebook{
+            
+            background-color: #4267B2;
+            height: 100px;
+            width: 150px;
+            font-size: 20px;
+            letter-spacing: 3px;
+            font-style: bold;
+            font-family: cursive;
+            text-shadow: 3px 3px black;
+            transition: width 1s,height 1s,transform 1s;
+        } 
+        div.facebook:hover{
+            width: 300px;
+            height: 200px;
+            transform: rotateX(360deg);
+            
+        }
+        .Apple{
+            background-color: brown;
+            height: 100px;
+            width:auto;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 2px;
+            
+            
+            
+        }
+        .Microsoft{
+            background-color: green;
+            height: 100px;
+            width:auto;
+            
+
+        }
+    </style></head>
+    <body>
+         <div class="facebook">
+        <p>Facebook</p></div>
+        <div class="Apple">
+        <p>Apple</p></div>
+        <div class="Microsoft">
+        <p> Microsoft</p></div>
+    </body></html>

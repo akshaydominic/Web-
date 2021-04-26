@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Interval</title></head>
+    <body>
+    <p id="counter"> 0</p>
+        <button onclick="clearInterval(counter)">Stop counting </button>
+        <button onclick="clearTimeout(mydelay)">Avoid delay</button>
+        <script>
+            var mycounter=document.getElementById("counter");
+            var x=0;
+            var counter=setInterval(function(){x++;mycounter.innerHTML=x;},1000);
+            var mydelay=setTimeout(function(){window.alert("welcome to the page");},3000);
+            
+            
+        </script>
+        
+        
+    </body>
+</html>

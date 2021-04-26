@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Javascript</title>
+    </head>
+    <body>
+        <p style="font-family: cursive; color: blueviolet; font-size: 20px; font-weight: bold; letter-spacing: 2px "; id="paragraph">Javascript</p>
+        <script>
+            for(i=1;i<11;i++){
+                document.getElementById("paragraph").innerHTML+="<br />"+i;
+            }
+            var shop_list=["orange","apple","bread"];
+            for(i=0;i<shop_list.length;i++){
+                 document.getElementById("paragraph").innerHTML+="<br />"+shop_list[i];
+            }
+            var list_number=[1,2,3];
+            for(i=0;i<list_number.length;i++){
+                 list_number[i]=Math.pow(list_number[i],2);
+            }
+             document.getElementById("paragraph").innerHTML+="<br />"+list_number;
+        
+        </script>
+    </body>
+</html>

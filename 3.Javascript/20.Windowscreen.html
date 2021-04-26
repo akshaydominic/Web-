@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Window and screen</title>
+        <style>
+            #div1{
+                background-color: goldenrod;
+            }
+            #div2{
+                background-color: coral;
+            }
+            #div3{
+                background-color: darksalmon;
+            }
+        
+            #div4{
+                background-color: crimson;
+            }
+            .div{
+                float: left;
+                margin-left: 2px;
+                
+            }
+        
+        </style>
+    
+    
+    </head>
+    <body>
+        <div id="div1" class="div">Div1</div>
+        <div id="div2" class="div">Div2</div>
+        <div id="div3" class="div">Div3</div>
+        <div id="div4" class="div">Div4</div>
+
+        <script>
+            for(i=1;i<5;i++){
+            document.getElementById("div" +i).style.width=window.innerWidth/4 -15+'px';
+            document.getElementById("div"+i).style.height=window.innerHeight+'px';
+            }
+        </script>
+        
+    </body>
+</html>

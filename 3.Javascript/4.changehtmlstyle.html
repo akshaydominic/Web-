@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Gradient</title>
+    <style>
+        p{
+            color: white;
+        }
+        .facebook{
+            
+            background-color: #4267B2;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+            letter-spacing: 3px;
+            font-style: bold;
+            font-family: cursive;
+            text-shadow: 3px 3px black;
+            
+        }
+        .Apple{
+            background:linear-gradient(to bottom right,rgba(0,0,255,0.5),rgba(0,0,255,1));
+            height: 100px;
+            width:auto;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 2px;
+            
+            
+        }
+        .Microsoft{
+            background-color: green;
+            height: 100px;
+            width:auto;
+            background:radial-gradient(circle,green 20%,red 100%);
+
+        }
+    </style></head>
+    <body>
+         <div class="facebook" id="facebook">
+        <p>Facebook</p></div>
+        <div class="Apple">
+        <p>Apple</p></div>
+        <div class="Microsoft">
+        <p> Microsoft</p></div>
+        <button id="button1"> change facebook style</button>
+        <script> document.getElementById("button1").onclick=function(){
+            document.getElementById("facebook").innerHTML="Akshay";
+            document.getElementById("facebook").style.width='150px';
+            document.getElementById("facebook").style.fontWeight='bold';
+                
+            document.getElementById("facebook").style.color='white';
+            }</script>
+        
+    </body></html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Regular Expressions</title>
+        <style>
+            #error{
+                color: #e81616;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <p id="error"></p>
+        <script>
+            try{
+                rnag(3,4);
+            }
+            catch(err){
+                document.getElementById("error").innerHTML=err.message;
+            }
+            
+        </script>
+
+    </body>
+</html>

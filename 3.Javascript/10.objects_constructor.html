@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Javascript</title>
+    </head>
+    <body>
+        <p style="font-family: cursive; color: blueviolet; font-size: 25px; font-weight: bold";>Javascript</p>
+        <script>
+            function phone(make,model,warranty){
+                this.make=make;
+                this.model=model;
+                this.warranty=warranty;
+                this.extendwarranty=function(x){
+                    this.warranty=this.warranty+x;       
+                }
+            }
+            var apple=new phone("Apple","Iphone X",10);
+            var samsung=new phone("Samsung","Note 2",5);
+            window.console.log(apple);
+            window.console.log(samsung);
+            window.console.log(apple);
+            apple.model="Iphone XS Max";
+            window.console.log(apple);
+            window.console.log(samsung);
+            samsung.extendwarranty(5);
+            window.console.log(samsung);
+            samsung.condition="new";
+            window.console.log(samsung);
+            var mobo=samsung;
+            window.console.log(mobo);
+            phone.prototype.condition="brand new";
+            var p2 =new phone("google","pixel",11);
+            window.console.log(p2);
+            window.console.log(p2.condition);
+            var p1=new phone("moto","uzi",10);
+            window.console.log(p1);
+            window.console.log(p1.condition);
+        </script>
+    </body>
+</html>

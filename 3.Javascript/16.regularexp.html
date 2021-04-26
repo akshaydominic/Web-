@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Regular Expressions</title>
+        
+    </head>
+    <body>
+        <p> String :<span id="string"> </span></p>
+        <p> Pattern :<span id="pattern"> </span></p>
+        <p> Result(Search) :<span id="search"> </span></p>
+        <p> Result(Match) :<span id="match"> </span></p>
+        <p> Result(Test) :<span id="test"> </span></p>
+        <script>
+            var string="Ktlantadmz12345";
+            var pattern=/[^A-Z]/i;
+            document.getElementById("search").innerHTML=string.search(pattern);
+            document.getElementById("match").innerHTML=string.match(pattern);
+            document.getElementById("test").innerHTML=pattern.test(string); document.getElementById("string").innerHTML=string;
+            document.getElementById("pattern").innerHTML=pattern;
+        </script>
+
+    </body>
+</html>
